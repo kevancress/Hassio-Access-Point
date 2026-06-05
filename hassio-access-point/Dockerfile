@@ -1,5 +1,7 @@
-ARG BUILD_FROM
+ARG BUILD_FROM="alpine"
 FROM $BUILD_FROM
+
+LABEL maintainer="kevan.cress@gmail.com"
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
